@@ -1,0 +1,115 @@
+/* CSS Code */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f7fb;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 18%;
+    background-color: #e3e7f1;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4B5D67;
+    transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+    background-color: #dce1e8;
+    border-radius: 5px;
+}
+
+.sidebar .active {
+    font-weight: bold;
+    background-color: #dce1e8;
+    border-radius: 5px;
+}
+
+.content {
+    width: 82%;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 60%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard-section {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.total { background-color: #ffa500; border: 4px solid #e69500; z-index: 2; }
+.gain { background-color: #00bfff; border: 4px solid #009acd; position: absolute; top: 30px; left: 50px; }
+.loss { background-color: #8a2be2; border: 4px solid #6a1eb5; position: absolute; top: 50px; right: 50px; }
+
+.chart-info {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #4b5d67;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}

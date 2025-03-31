@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Bluestock Fintech</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo"> <i class="fas fa-chart-line"></i> Bluestock Fintech</div>
+            <h3 class="menu-heading">MENU</h3>
+            <nav>
+                <ul>
+                    <li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                    <li><i class="fas fa-chart-bar"></i> Manage IPO</li>
+                    <li><i class="fas fa-list"></i> IPO Subscription</li>
+                    <li><i class="fas fa-check-circle"></i> IPO Allotment</li>
+                </ul>
+            </nav>
+            <h3 class="menu-heading">OTHERS</h3>
+            <nav>
+                <ul>
+                    <li><i class="fas fa-cog"></i> Settings</li>
+                    <li><i class="fas fa-code"></i> API Manager</li>
+                    <li><i class="fas fa-user"></i> Accounts</li>
+                    <li><i class="fas fa-question-circle"></i> Help</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="header">
+                <input type="text" placeholder="Search" class="search-bar">
+                <div class="profile">Hi, Vishal</div>
+            </header>
+
+            <section class="dashboard">
+                <div class="dashboard-section">
+                    <h2>IPO Dashboard India</h2>
+                    <div class="stats">
+                        <div class="circle total">30<br>Total IPO</div>
+                        <div class="circle gain">20<br>IPO in Gain</div>
+                        <div class="circle loss">9<br>IPO in Loss</div>
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <h2>Quick Links</h2>
+                    <ul class="quick-links">
+                        <li><img src="nse-logo.png" alt="NSE"> NSE India</li>
+                        <li><img src="bse-logo.png" alt="BSE"> BSE India</li>
+                        <li><img src="sebi-logo.png" alt="SEBI"> SEBI</li>
+                        <li><img src="moneycontrol-logo.png" alt="Money Control"> Money Control</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-section">
+                    <h2>Main Board IPO</h2>
+                    <div class="chart-container">
+                        <canvas id="ipoChart"></canvas>
+                    </div>
+                    <div class="chart-info">Afternoon IPO NSE & BSE: 15</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
